@@ -1,0 +1,42 @@
+<div class="trending">
+  <div class="title">TRENDING</div>
+  <carousel [cellWidth]="300">
+    <div
+      class="trending-shows carousel-cell"
+      *ngFor="let item of trendingshows"
+    >
+      <!-- {{ item.title }} -->
+      <img
+        class="thumbnail"
+        (click)="displaytitle(item)"
+        src="{{ getimage(item) }}"
+      />
+    </div>
+  </carousel>
+</div>
+
+<div class="trending">
+  <div class="title">COMING SOON</div>
+  <div class="trending-shows" *ngFor="let item of comingsoon">
+    <!-- {{ item.title }} -->
+    <img
+      class="thumbnail"
+      (click)="displaytitle(item)"
+      src="{{ getimage(item) }}"
+    />
+  </div>
+</div>
+
+<div class="trending">
+  <div class="title">DRAMA</div>
+  <carousel>
+    <div class="trending-shows carousel-cell" *ngFor="let item of drama">
+      <!-- {{ item.title }} -->
+      <img
+        class="thumbnail"
+        (click)="displaytitle(item)"
+        src="{{ getimage(item) }}"
+      />
+    </div>
+  </carousel>
+</div>
