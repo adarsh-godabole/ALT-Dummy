@@ -1,0 +1,14 @@
+<div class="trending" *ngIf="isfetched">
+  <carousel>
+    <div
+      *ngFor="let item of titleandimage"
+      class="trending-shows carousel-cell"
+    >
+      <img
+        class="thumbnail"
+        (click)="displaytitle(item)"
+        src="{{ item.imageurl }}"
+      />
+    </div>
+  </carousel>
+</div>

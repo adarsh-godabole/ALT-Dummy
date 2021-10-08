@@ -11,33 +11,45 @@ export class FetchdataService {
 
   constructor(private http: HttpClient) { }
 
-   getTrendingshow(){
+//    getTrendingshow(){
 
-      return this.http.get("https://api.cloud.altbalaji.com/zuul/catalogue/balaji/catalogue/filters/trending-home-1")
+//       return this.http.get("https://api.cloud.altbalaji.com/zuul/catalogue/balaji/catalogue/filters/trending-home-1")
     
 
     
 
 
-  }
+//   }
 
-  getComingsoon(){
+//   getComingsoon(){
 
-    return this.http.get("https://api.cloud.altbalaji.com/zuul/catalogue/balaji/catalogue/filters/coming-soon")
+//     return this.http.get("https://api.cloud.altbalaji.com/zuul/catalogue/balaji/catalogue/filters/coming-soon")
   
 
   
 
 
+// }
+
+// getDrama(){
+
+//   return this.http.get("https://api.cloud.altbalaji.com/zuul/catalogue/balaji/catalogue/filters/trending-home-1")
+
+
+
+
+
+// }
+
+getShows(){
+  return this.http.get('https://api.cloud.altbalaji.com/sections/31?')
 }
 
-getDrama(){
-
-  return this.http.get("https://api.cloud.altbalaji.com/zuul/catalogue/balaji/catalogue/filters/trending-home-1")
-
-
-
-
-
+fetchimage(url)
+{
+  // console.log(url);
+  
+  //  return this.http.get(url)
 }
+
 }

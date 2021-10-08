@@ -8,6 +8,7 @@ import {FetchdataService} from './fetchdata.service'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { DisplayComponent } from './display/display.component';
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 
@@ -15,7 +16,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
